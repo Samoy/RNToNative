@@ -1,1 +1,3 @@
-#React Native与Android相互通信
+#React Native与原生代码的相互通信
+目前已实现RN与Android之间的通信
+iOS近期更新
