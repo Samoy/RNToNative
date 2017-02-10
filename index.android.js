@@ -16,6 +16,8 @@ import {
     ToastAndroid
 } from 'react-native';
 
+import KenBurnsView from './KenBurnsView';
+
 let ExampleInterface = NativeModules.ExampleInterface;
 
 export default class RNToNative extends Component {
@@ -40,8 +42,9 @@ export default class RNToNative extends Component {
                 <TouchableOpacity onPress={()=>{
                     ExampleInterface.HandleMessage('RN to Android');
                 }}>
-                    <Text>Welcome to React Native!</Text>
+                    <Text>Press here to open contacts!</Text>
                 </TouchableOpacity>
+                <KenBurnsView style={{width:200,height:200}}/>
             </View>
         );
     }
@@ -64,6 +67,10 @@ const styles = StyleSheet.create({
         color: '#333333',
         marginBottom: 5,
     },
+    interface: {
+        width: 200,
+        height: 200
+    }
 });
 
 AppRegistry.registerComponent('RNToNative', () => RNToNative);
