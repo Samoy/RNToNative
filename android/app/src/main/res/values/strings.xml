@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RNToNative</string>
+    <string name="goback">GoBack</string>
+</resources>
